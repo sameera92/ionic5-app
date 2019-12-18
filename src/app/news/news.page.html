@@ -5,5 +5,9 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-card *ngFor="let article of items?.articles" (click)="gotoSinglePage(article)">
+    <ion-card-content>
+      <ion-card-title>{{article.title}}</ion-card-title>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
